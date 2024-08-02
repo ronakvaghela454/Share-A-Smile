@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share a Smaile</title>
+    <link rel="stylesheet" href="./assets/css/stylelogin.css">
+</head>
+<body>
+  <div class="main">
+   <div class="form">
+     <h2>Login Here</h2>
+     <input type="email" name="email" placeholder="Enter your email" id="email">
+     <input type="password" name="password" placeholder="Enter your password" id="password">
+     <button class="btn" onclick="func()">Login</button>
+     <button class="rbtn"><a href="reg.html">New User</a></button>
+   </div> 
+  </div>
+   <script>
+    function func()
+    {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+          if(email == 'ss@gmail.com' && password == '123456789'){
+            alert("success full !")
+            window.location.assign("index.html")
+
+          }
+        else{
+            alert("Invalid user !")
+        }
+    }
+   </script>
+</body>
+</html>
